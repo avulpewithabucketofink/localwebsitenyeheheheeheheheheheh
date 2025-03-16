@@ -1,0 +1,121 @@
+/* body */
+body {
+    font-family: 'Roboto', monospace;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh; /* fills the whole screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers content horizontally */
+    background-image: url("/home/averyp/Downloads/tiledtbackgroundthing.png");
+    background-repeat: repeat;
+}
+
+/* container for layout */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* profile section (nickname, picture, and description) */
+.profile-section {
+    max-width: 90%;
+    background-color: #000;
+    border: 4px solid #006600;
+    display: flex;
+    flex-direction: column; /* Fix center alignment */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/* profile picture */
+.profile-pic {
+    border: 2px solid #FFFFFF;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    margin: 0 auto 15px auto; /* centers it */
+}
+
+/* description styling */
+.bio {
+    font-size: 16px;
+    background-color: #000;
+    color: #3B3B3B;
+    padding: 10px;
+    border: 2px solid #BFBFBF;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+/* bio styling */
+.about-me {
+    font-size: 16px;
+    color: #BFBFBF;
+    background-color: #000;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------ */
+
+/* 'about me' section individual bits styling */
+.about-me ul {
+    list-style: none;
+    color: #BFBFBF;
+    padding: 0;
+}
+
+.about-me li {
+    margin-bottom: 0.5rem;
+    color: #BFBFBF;
+}
+
+.about-me a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.about-me a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------ */
+
+/* old and primarily unused, used for something else for now */
+.stamps {
+    background-color: #000;
+    border: 1px solid #3B3B3B;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #666;
+    text-align: center;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Left Ads | Main Content | Right Ads */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}

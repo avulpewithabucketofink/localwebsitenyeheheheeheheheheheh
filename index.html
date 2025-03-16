@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://cynderthekitsune.neocities.org/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base template</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* ALL OF CSS STYLES */
+        /* body */
+        body {
+            font-family: 'Roboto', monospace;
+            font-weight: bold;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh; /* fills the whole screen */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centers content horizontally */
+            background-image: url("/home/averyp/Downloads/tiledtbackgroundthing.png");
+            background-repeat: repeat;
+        }
+
+        /* container for layout */
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        /* profile section (nickname, picture, and description) */
+        .profile-section {
+            max-width: 90%;
+            background-color: #000;
+            border: 4px solid #006600;
+            display: flex;
+            flex-direction: column; /* Fix center alignment */
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+
+        /* profile picture */
+        .profile-pic {
+            border: 2px solid #FFFFFF;
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            margin: 0 auto 15px auto; /* centers it */
+        }
+
+        /* description styling */
+        .bio {
+            font-size: 16px;
+            background-color: #000;
+            color: #3B3B3B;
+            padding: 10px;
+            border: 2px solid #BFBFBF;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 90%;
+         }
+
+        /* bio styling */
+        .about-me {
+            font-size: 16px;
+            color: #BFBFBF;
+            background-color: #000;
+            padding: 10px;
+            text-align: left;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+         /* ------------------------------------ */
+
+        /* 'about me' section individual bits styling */
+        .about-me ul {
+            list-style: none;
+            color: #BFBFBF;
+            padding: 0;
+        }
+
+        .about-me li {
+             margin-bottom: 0.5rem;
+             color: #BFBFBF;
+        }
+
+        .about-me a {
+             color: #0073e6;
+             text-decoration: none;
+        }
+
+        .about-me a:hover {
+           text-decoration: underline;
+        }
+
+        /* ------------------------------------ */
+
+        /* old and primarily unused, used for something else for now */
+        .stamps {
+            background-color: #000;
+            border: 1px solid #3B3B3B;
+            margin-top: 8px;
+            font-size: 0.85em;
+            color: #666;
+            text-align: center;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Left Ads | Main Content | Right Ads */
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ad-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body class="layout" style="color:white"> <!-- BODY -->
+    <div class="container">
+        <div class="profile-section">
+            <h1>hiiii</h1>
+            <iframe width="180" height="180" style="border:none" src="https://dimden.dev/moon?custom=1" name="dimdenmoonwidget"></iframe>
+        </div>
+    </div>
+  <div class="container"> <!-- CONTAINER -->
+    <div class="profile-section"> <!-- PROFILE SECTION -->
+      <h1>header 1</h1>
+      <h2>welcome to my own website that i made locally!</h2>
+      <p>i made this entirely in Kate, and using KDE Falkon to view it (ughhh KDE ecosystem lmao)</p>
+      <p>but this is kindaa cool i guess, especially since it's literally local, and nobody but myself can view it >:3</p>
+      <hr> <!-- HORIZONTAL LINE -->
+      <br> <!-- BREAK; BEEG GAP -->
+      <div class="stamps">
+         <img src="/home/averyp/Downloads/dumb website/media/2534815kut8tlc73u.gif">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="profile-section">
+        <h1>again!</h1>
+        <h3>my stamps section hehehe</h3>
+        <div class="stamps">
+            <img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/touhouproject.png"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/vocaloidenthusiast.png"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/webpassion.gif"><a href="https://cynderthekitsune.com"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/buttonnnnnnn.png"></a><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/madewithkate.png"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/human-made.gif"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/pictochat.gif"><img src="file:///home/averyp/Downloads/dumb website/media/88x31-buttons/Bringbackflipnote.gif"><a href="https://dimden.dev/"><img src="https://dimden.dev/images/88x31.gif"></a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
